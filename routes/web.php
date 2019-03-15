@@ -29,6 +29,7 @@ Route::prefix('/')->group(function () {
     Route::get('/','Frontend\\PagesController@index')->name('index');
     Route::get('/contact.html','Frontend\\PagesController@contact')->name('contact');
     Route::get('/images.html','Frontend\\PagesController@getimages')->name('images');
+    Route::get('/detail.html','Frontend\\PagesController@getdetail')->name('detail');
 
 });
 

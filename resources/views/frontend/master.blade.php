@@ -17,11 +17,11 @@
 		}
 
 </script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="{{asset('css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
 	<link href="{{asset('css/style.css')}}" rel='stylesheet' type='text/css' />
-  <link href="{{asset('css/fontawesome-all.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="{{asset('css/fontawesome-all.css')}}" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
 
@@ -39,7 +39,7 @@
 				<ul class="menu">
 					<li class="mr-lg-4 mr-3 active"><a href="/">Home</a></li>
 					<li class="mr-lg-4 mr-3"><a href="#news">Tin Tức</a></li>
-					<li class="mr-lg-4 mr-3"><a href="#information">thông tin</a></li>
+					<li class="mr-lg-4 mr-3"><a href="">thông tin</a></li>
 					<li class="mr-lg-4 mr-3"><a href="{{route('images')}}">hình ảnh</a></li>
 
 					<li class="mr-lg-4 mr-3">

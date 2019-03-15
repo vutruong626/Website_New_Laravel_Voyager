@@ -44,7 +44,7 @@ $(document).ready(function() {
 						<div class="col-lg-6 advantage-grid-info pt-md-5">
 							<div class="advantage_left">
 								<!-- <h4 class="mb-2"></h4> -->
-								<h3>{{$item_news->name}}</h3>
+								<a href="{{route('detail',[$item_news->id,$item_news->name])}}" ><h3 class="mb-2">{{$item_news->name}}</h3></a>
 								<p class="mt-2" style="height: 138px; overflow-y: hidden;">{{$item_news->title}}</p>
 							</div>
 						</div>
@@ -66,27 +66,29 @@ $(document).ready(function() {
 						</div>
 						<div class="col-lg-6 advantage-grid-info pt-md-5">
 							<div class="advantage_left">
-								<h4 class="mb-2">Integer porttitor mollisar</h4>
-								<h3>{{$item_news_righ->name}}</h3>
+								<!-- <h4 class="mb-2">Integer porttitor mollisar</h4> -->
+								<a href=""><h3>{{$item_news_righ->name}}</h3></a>
 								<p class="mt-2" style="height: 138px; overflow-y: hidden;">{{$item_news_righ->title}}</p>
 							</div>
 						</div>
 					</div>
 					@endforeach
+					@foreach($clup as $item_clup)
 					<div class="row middle-grids pt-lg-5">
 						<div class="col-lg-6 advantage-grid-info pt-md-5">
 							<div class="advantage_left">
-								<h4 class="mb-2">Integer porttitor mollisar</h4>
-								<h3>Non laoreet eleifend</h3>
-								<p class="mt-2">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur ac ipsum in, egestas vestibulum tellus.</p>
+								<!-- <h4 class="mb-2">Integer porttitor mollisar</h4> -->
+								<a href="#"><h3>{{$item_clup->name}}</h3></a>
+								<p class="mt-2" style="height: 138px; overflow-y: hidden;">{{$item_clup->title}}</p>
 							</div>
 						</div>
 						<div class="col-lg-6 advantage-grid-info1">
 							<div class="advantage_left1 text-center">
-								<img src="{{asset('images/h3.jpg')}}" class="img-fluid" alt="">
+								<img src="{{asset('storage/'.$item_clup->image)}}" class="img-fluid" alt="">
 							</div>
 						</div>
 					</div>
+					@endforeach
 				</div>
 			</div>
 		</section>
